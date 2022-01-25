@@ -34,7 +34,6 @@ namespace ConsoleApp1
             {
                 foreach (string dirs in destFolders)
                 {
-                    //Console.WriteLine(dirs);
                     if (dirs == subdirPDF)
                     {
                         Console.WriteLine("PDF Subdirectory exists!");
@@ -80,7 +79,6 @@ namespace ConsoleApp1
             foreach (string file in fileEntries)
             {
                 fileName = Path.GetFileName(file);
-                //File.Move(file, Path.Combine(dest, fileName));
                 fileExtension = Path.GetExtension(file);
 
                 if (fileExtension == ".pdf")
